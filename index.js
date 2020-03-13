@@ -57,3 +57,9 @@ class Dog extends Animal {
   }
 }
 
+// https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/
+
+
+// https://www.codewars.com/kata/understanding-closures-the-basics/
+
+
