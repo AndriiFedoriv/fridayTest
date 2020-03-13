@@ -59,6 +59,18 @@ class Dog extends Animal {
 
 // https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/
 
+const giveMeFive = object => {
+  const result = [];
+
+  for (const key in object) {
+    if (object.hasOwnProperty(key)) {
+      if (key.length === 5) result.push(key);
+      if (object[key].length === 5) result.push(object[key]);
+    }
+  }
+
+  return result;
+};
 
 // https://www.codewars.com/kata/understanding-closures-the-basics/
 
