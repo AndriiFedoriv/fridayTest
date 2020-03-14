@@ -61,17 +61,23 @@ class Dog extends Animal {
 
 const giveMeFive = object => {
   const result = [];
-
   for (const key in object) {
     if (object.hasOwnProperty(key)) {
       if (key.length === 5) result.push(key);
       if (object[key].length === 5) result.push(object[key]);
     }
   }
-
   return result;
 };
 
 // https://www.codewars.com/kata/understanding-closures-the-basics/
 
-
+function buildFun(n) {
+  const res = [];
+  for (let i = 0; i < n; i++) {
+    res.push(function() {
+      return i;
+    });
+  }
+  return res;
+}
